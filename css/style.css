@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Outfit", sans-serif;
+  font-size: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  position: relative;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+main .container .img-container {
+  position: relative;
+}
+main .container .img-container:hover {
+  cursor: pointer;
+}
+main .container .img-container:hover .overlay {
+  opacity: 0.5;
+}
+main .container .img-container:hover .hover-icon {
+  opacity: 1;
+}
+main .container .img-container img.nft-img {
+  border-radius: 1rem;
+  width: 100%;
+  background-color: #000;
+}
+main .container .img-container .overlay {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 99%;
+  border-radius: 10px;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+main .container .img-container .hover-icon {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+main .container h1 {
+  font-size: 2.4rem;
+  color: hsl(0, 0%, 100%);
+  margin: 2rem 0;
+  font-weight: 600;
+}
+main .container p {
+  font-size: 1.8rem;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+main .container .price {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+main .container .price .nft {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+main .container .price .nft img {
+  padding-right: 0.5rem;
+}
+main .container .price .nft span {
+  font-size: 1.8rem;
+  color: hsl(178, 100%, 50%);
+}
+main .container .price .datum {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  vertical-align: middle;
+  align-items: center;
+}
+main .container .price .datum img {
+  padding-right: 0.5rem;
+}
+main .container .price .datum span {
+  font-size: 1.5rem;
+  color: hsl(215, 51%, 70%);
+}
+main .container .autor {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .container .autor .autor-img {
+  flex: 2;
+  padding-right: 1rem;
+}
+main .container .autor .autor-img img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+main .container .autor .autor-name {
+  flex: 10;
+}
+main .container .autor .autor-name p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+main .container .autor .autor-name p span {
+  color: hsl(0, 0%, 100%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+footer a {
+  color: hsl(178, 100%, 50%);
+}/*# sourceMappingURL=style.css.map */
